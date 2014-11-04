@@ -1,4 +1,6 @@
 <?php
+  $page = '';
+
   if(isset($_REQUEST["page"]))
   {
     $page = $_REQUEST["page"];
@@ -7,7 +9,7 @@
   switch($page)
   {
     case "subscribe":
-      echo "subscribe";
+      require_once("subscribe.inc.php");
       break; 
     case "unsubscribe":
       echo "unsubscribe";
