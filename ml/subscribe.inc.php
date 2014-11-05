@@ -16,7 +16,7 @@
 	<div id="header">Atari ColdFire - You have successfully subscribed</div>
 	<p>
 		<?php
-			include("valid_mail.php");
+			include("subscribe.php");
 		?>
 
 	</p>

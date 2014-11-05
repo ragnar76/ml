@@ -18,9 +18,7 @@
 		<ul class="foo">
 				<li>Ceci est la liste de diffusion publique de l'Atari ColdFire Project. Toute personne souhaitant recevoir les informations et les nouvelles fraiches des développements en cours peut souscrire. Les langues autorisées sont: français, espagnol, anglais et allemand.</li>
 				<li>Esta es la lista de correo pública de "Atari Coldfire Project". Toda persona interesada que quiera recibir información y noticias de primera mano sobre el desarrollo del proyecto puede subscribirse. Los idiomas autorizados son el francés, español, ingles y alemán.</li>
-
 				<li>This is the public mailinglist of the Atari Coldfire Project. Every interrested person who will recive informations and news about the ongoing developement from first hand can subscribe. Possible Languages are french, spanish, english and german.</li> 
-
 				<li>Dies ist die öffentliche Mailingliste des Atari Coldfire Projekts, in die sich alle interessierten Menschen eintragen können um Neuigkeiten und Informationen über den Fortschritt der Entwicklung aus erster Hand zu bekommen. Erlaubte Sprachen sind französisch, spanisch, englisch und deutsch.</li>
 		</ul>
 	</p>
@@ -41,7 +39,7 @@
 
 	<div id="subheader">Atari ColdFire Subscribers</div>
 	<p>To unsubscribe from the Atari ColdFire Mailinglist, enter your subscription email address:</p>
-	<form role="form" method="get" action="#">
+	<form role="form" method="post" action="index.php?page=unsubscribe">
           <input type="text" name="email_unsub" size="30" value="your email">
           <input type="submit" value="Unsubscribe">
     </form>

@@ -12,7 +12,7 @@
       require_once("subscribe.inc.php");
       break; 
     case "unsubscribe":
-      echo "unsubscribe";
+      require_once("unsubscribe.inc.php");
       break;
     case "list":
       $output = shell_exec("ls");

@@ -13,10 +13,10 @@
 
 <div id="container">
 
-	<div id="header">Atari ColdFire - Infos about the Mailinglist</div>
+	<div id="header">Atari ColdFire - You have successfully unsubscribed</div>
 	<p>
 		<?php
-			include("valid_mail.php");
+			include("unsubscribe.php");
 		?>
 
 	</p>

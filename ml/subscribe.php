@@ -4,20 +4,6 @@
 	$username = '';
 	$is_ok1 = FALSE;
 	$is_ok2 = FALSE;
-	$retval = '';
-
-	$subscriber_app = system("php rand_exit.php", $retval);
-
-	if($retval === 0)
-	{
-	//	echo "sauber beendet<br>";
-		echo "";
-	}
-	else
-	{
-	//	echo "irgendein fehler<br>";
-		echo "";
-	}
 
 	if(isset($_REQUEST["email"]))
 	{
@@ -51,7 +37,9 @@
 
 	if($is_ok1 == TRUE && $is_ok2 == TRUE)
 	{
-		shell_exec("ezmlm-sub /home/acp/mailinglist/atari-coldfire $email");
+		$new_mail = str_replace("@", "=", $email);
+		shell_exec("mail -s \"\" atari-coldfire-subscribe-$new_mail@acp-devel.org <<< \"\"");
+		
 		echo "You have successfully subscribed to the Atari ColdFire Mailinglist<br><br>";
 		echo "Pleas return to the <a href=\"/\">Main Index</a>";
 	}
